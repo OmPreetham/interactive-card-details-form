@@ -1,7 +1,11 @@
+import Illustration from './components/Illustration'
+import Form from './components/Form'
+
 const App = () => {
   return (
-    <main>
-      <section>Hello</section>
+    <main className="wrapper">
+      <Illustration />
+      <Form />
     </main>
   )
 }
