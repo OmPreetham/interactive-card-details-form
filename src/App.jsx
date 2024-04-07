@@ -6,8 +6,8 @@ const App = () => {
   return (
     <main className="wrapper">
       <Illustration />
-      {/* <Form /> */}
-      <ThankYou />
+      <Form />
+      {/* <ThankYou /> */}
     </main>
   )
 }
