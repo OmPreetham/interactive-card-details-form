@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $gap-normal;
+
+  max-width: 1000px;
+}

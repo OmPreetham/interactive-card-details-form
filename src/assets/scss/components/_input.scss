@@ -1,0 +1,17 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+@mixin input() {
+  border: 1px solid $clr-neutral-light-grayish-violet;
+  border-radius: 0.5rem;
+
+  padding-block: 0.5em;
+  padding-inline: 0.8em;
+
+  outline: transparent;
+
+  &::placeholder {
+    font-weight: $fw-500;
+    color: $clr-neutral-dark-grayish-violet;
+  }
+}

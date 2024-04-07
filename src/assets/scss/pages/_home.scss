@@ -1,0 +1,30 @@
+@use '../utils/variables' as *;
+
+html {
+  font-family: $ff-space-gortesk;
+  font-size: $fs-base;
+}
+
+body {
+  max-width: $max-width-body;
+  min-width: $min-width-body;
+
+  min-height: $min-height-screen;
+
+  margin-inline: auto;
+
+  background-image: url('/images/bg-main-desktop.png');
+  background-size: 35% 100%;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+#root {
+  min-height: $min-height-screen;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem;
+}

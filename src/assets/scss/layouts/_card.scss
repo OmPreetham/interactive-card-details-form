@@ -1,0 +1,48 @@
+@use '../utils/variables' as *;
+@use '../components/button' as *;
+@use '../base/topography' as *;
+@use '../components/input' as *;
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: $gap-normal;
+
+  max-width: 400px;
+
+  &__block-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__extra-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $gap-normal;
+  }
+
+  &__exp-wrapper {
+    display: flex;
+    gap: $gap-base;
+  }
+
+  &__label {
+    @include font-label-bold;
+  }
+
+  &__input {
+    width: 100%;
+    @include input;
+  }
+
+  &__submit {
+    @include button;
+  }
+}

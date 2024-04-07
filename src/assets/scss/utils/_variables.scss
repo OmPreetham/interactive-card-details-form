@@ -1,0 +1,53 @@
+// Colors
+
+// Primary
+
+$clr-primary-bg-card-front: (hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+$clr-primary-input-errors: hsl(0, 100%, 66%);
+
+// Neutral
+
+$clr-neutral-white: hsl(0, 0%, 100%);
+$clr-neutral-light-grayish-violet: hsl(270, 3%, 87%);
+$clr-neutral-dark-grayish-violet: hsl(279, 6%, 55%);
+$clr-neutral-very-dark-violet: hsl(278, 68%, 11%);
+
+// Topography
+
+// Font Family
+
+$ff-space-gortesk: 'Space Grotesk', sans-serif;
+
+// Font Sizes
+
+$fs-base: 1.1rem;
+
+// Font Weights
+
+$fw-500: 500;
+$fw-700: 700;
+
+// Letter Spacing
+
+$ls-1px: 1px;
+$ls-2px: 2px;
+
+// Line Heights
+
+$lh-101: 1.1;
+
+// Screen
+
+// Weights
+
+$max-width-body: 1440px;
+$min-width-body: 375px;
+
+// Heights
+
+$min-height-screen: 100dvh;
+
+// Displays
+
+$gap-base: 0.5rem;
+$gap-normal: 1.5rem;
