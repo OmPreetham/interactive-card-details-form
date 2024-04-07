@@ -1,0 +1,85 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-normal;
+
+  margin: 1rem;
+}
+
+.front {
+  position: relative;
+
+  display: flex;
+  align-items: start;
+
+  margin-right: auto;
+
+  &__details {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: $gap-normal;
+
+    padding: 1.5em 2em;
+  }
+
+  &__logo {
+    width: 4rem;
+  }
+
+  &__number {
+    font-size: calc(0.9rem + 1.2vw);
+    letter-spacing: 2px;
+    color: $clr-neutral-white;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-neutral;
+  }
+
+  &__subinfo {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap-normal;
+
+    font-size: calc(0.5rem + 0.4vw);
+    letter-spacing: 2px;
+    color: $clr-neutral-white;
+  }
+}
+
+.back {
+  position: relative;
+
+  margin-left: auto;
+
+  &__cvv-wrapper {
+    position: absolute;
+    top: 44%;
+    right: 13%;
+  }
+
+  &__cvv {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: $clr-neutral-white;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .illustration {
+  }
+}

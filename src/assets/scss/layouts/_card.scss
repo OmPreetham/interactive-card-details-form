@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 1rem;
 }
 
 .card {
@@ -14,7 +16,7 @@
   flex-direction: column;
   gap: $gap-normal;
 
-  max-width: 400px;
+  max-width: 380px;
 
   &__block-wrapper {
     display: flex;

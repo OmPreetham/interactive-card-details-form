@@ -3,7 +3,14 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: $gap-normal;
+  gap: $gap-base;
 
-  max-width: 1000px;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
 }
