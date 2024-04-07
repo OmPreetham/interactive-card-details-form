@@ -39,7 +39,7 @@
   }
 
   &__number {
-    font-size: calc(0.9rem + 1.2vw);
+    font-size: 1.6rem;
     letter-spacing: 2px;
     color: $clr-neutral-white;
   }
@@ -81,5 +81,23 @@
 
 @media screen and (max-width: 950px) {
   .illustration {
+    flex-direction: column-reverse;
+  }
+
+  .front {
+    margin-top: -5rem;
+    margin-right: 3rem;
+    z-index: 1;
+
+    &__details {
+      padding: 1em;
+    }
+    &__number {
+      font-size: 0.8rem;
+    }
+  }
+
+  .back {
+    margin-left: 3rem;
   }
 }
