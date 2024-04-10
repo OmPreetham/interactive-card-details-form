@@ -13,6 +13,7 @@ const Form = () => {
             id="name"
             placeholder="e.g. Jane Appleseed"
           />
+          <p className="card__error-message">Wrong format, letters only.</p>
         </div>
         <div className="card__block-wrapper">
           <label className="card__label" htmlFor="number">
@@ -26,6 +27,7 @@ const Form = () => {
             min={0}
             placeholder="e.g. 1234 5678 9123 0000"
           />
+          <p className="card__error-message">Wrong format, number only.</p>
         </div>
         <div className="card__extra-wrapper">
           <div className="card__block-wrapper">
@@ -51,6 +53,7 @@ const Form = () => {
                 placeholder="YY"
               />
             </div>
+            <p className="card__error-message">Wrong format, number only.</p>
           </div>
           <div className="card__block-wrapper">
             <label className="card__label" htmlFor="cvv">
@@ -65,6 +68,7 @@ const Form = () => {
               max={9999}
               placeholder="e.g. 123"
             />
+            <p className="card__error-message">Wrong format, number only.</p>
           </div>
         </div>
         <button className="card__submit" type="submit">

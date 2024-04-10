@@ -10,8 +10,9 @@
 
   outline: transparent;
 
+  @include font-input-bold;
+
   &::placeholder {
-    font-weight: $fw-500;
-    color: $clr-neutral-dark-grayish-violet;
+    @include font-placeholder-mid;
   }
 }

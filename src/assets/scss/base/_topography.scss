@@ -13,6 +13,23 @@
   font-weight: $fw-700;
   letter-spacing: $ls-2px;
   text-transform: uppercase;
-
   color: $clr-neutral-very-dark-violet;
+}
+
+@mixin font-input-bold {
+  font-size: $fs-base;
+  font-weight: $fw-700;
+  color: $clr-neutral-very-dark-violet;
+}
+
+@mixin font-placeholder-mid {
+  font-size: $fs-base;
+  font-weight: $fw-500;
+  color: $clr-neutral-dark-grayish-violet;
+}
+
+@mixin font-error-regular {
+  font-size: 0.7rem;
+  font-weight: $fw-500;
+  color: $clr-primary-input-errors;
 }

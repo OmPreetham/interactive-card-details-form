@@ -42,9 +42,29 @@
   &__input {
     width: 100%;
     @include input;
+
+    &:focus,
+    &:hover {
+      border-color: $clr-neutral-violet;
+    }
+
+    cursor: pointer;
   }
 
   &__submit {
     @include button;
+  }
+
+  // Errors
+
+  &__input--error {
+    &:focus,
+    &:hover {
+      border-color: $clr-primary-input-errors;
+    }
+  }
+
+  &__error-message {
+    @include font-error-regular;
   }
 }
