@@ -1,4 +1,4 @@
-const ThankYou = () => {
+const ThankYou = ({ setFormSubmitted }) => {
   return (
     <div className="thank-you-wrapper">
       <div className="thank-you">
@@ -13,7 +13,12 @@ const ThankYou = () => {
           <p className="thank-you__message">Thank You!</p>
           <p className="thank-you__info">We've added your card details</p>
         </div>
-        <button className="thank-you__continue">Continue</button>
+        <button
+          className="thank-you__continue"
+          onClick={() => setFormSubmitted(false)}
+        >
+          Continue
+        </button>
       </div>
     </div>
   )

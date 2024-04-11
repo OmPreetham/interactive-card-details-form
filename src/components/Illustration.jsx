@@ -1,4 +1,15 @@
-const Illustration = () => {
+import React from 'react'
+
+const Illustration = ({ name, number, month, year, cvc }) => {
+  // Define default values for each field
+  const defaultName = name ? name : 'YOUR NAME'
+  const defaultNumber = number
+    ? number.match(/.{1,4}/g).join(' ')
+    : '0000 0000 0000 0000'
+  const defaultMonth = month ? month : 'MM'
+  const defaultYear = year ? year : 'YY'
+  const defaultCvc = cvc ? cvc : '000'
+
   return (
     <div className="illustration">
       <div className="illustration__front front">
@@ -19,11 +30,13 @@ const Illustration = () => {
           </div>
           <div className="front__info">
             <div className="front__number-wrapper">
-              <p className="front__number">0000 0000 0000 0000</p>
+              <p className="front__number">{defaultNumber}</p>
             </div>
             <div className="front__subinfo">
-              <p className="front__name">JANE APPLESEED</p>
-              <p className="font__exp">00/00</p>
+              <p className="front__name">{defaultName}</p>
+              <p className="font__exp">
+                {defaultMonth}/{defaultYear}
+              </p>
             </div>
           </div>
         </div>
@@ -37,10 +50,11 @@ const Illustration = () => {
           />
         </div>
         <div className="back__cvv-wrapper">
-          <p className="back__cvv">000</p>
+          <p className="back__cvv">{defaultCvc}</p>
         </div>
       </div>
     </div>
   )
 }
+
 export default Illustration

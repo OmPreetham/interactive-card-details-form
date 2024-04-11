@@ -58,6 +58,8 @@
   // Errors
 
   &__input--error {
+    border-color: $clr-primary-input-errors;
+
     &:focus,
     &:hover {
       border-color: $clr-primary-input-errors;

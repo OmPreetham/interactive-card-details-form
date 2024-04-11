@@ -30,9 +30,17 @@ Desktop
 
 ![Desktop Preview](/public/preview-desktop.png)
 
+![Desktop Preview Errors](/public/preview-desktop-errors.png)
+
+![Desktop Preview Data](/public/preview-desktop-data.png)
+
+![Desktop Preview Thank You](/public/preview-desktop-thank-you.png)
+
 Mobile
 
-![Mobile Preview](/public/preview-mobile.png)
+![Mobile Preview Data](/public/preview-mobile-data.png)
+
+![Mobile Preview Thank You](/public/preview-mobile-thank-you.png)
 
 ## Getting Started
 
