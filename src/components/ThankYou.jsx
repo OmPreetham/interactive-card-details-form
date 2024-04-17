@@ -5,7 +5,7 @@ const ThankYou = ({ setFormSubmitted }) => {
         <div className="thank-you__image-wrapper">
           <img
             className="thank-you__image"
-            src="/images/icon-complete.svg"
+            src="images/icon-complete.svg"
             alt="Icon Complete"
           />
         </div>

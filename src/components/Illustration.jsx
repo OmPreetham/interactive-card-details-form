@@ -16,7 +16,7 @@ const Illustration = ({ name, number, month, year, cvc }) => {
         <div className="front__image-wrapper">
           <img
             className="front__image"
-            src="/images/bg-card-front.png"
+            src="images/bg-card-front.png"
             alt="Card Background Front"
           />
         </div>
@@ -24,7 +24,7 @@ const Illustration = ({ name, number, month, year, cvc }) => {
           <div className="front__logo-wrapper">
             <img
               className="front__logo"
-              src="/images/card-logo.svg"
+              src="images/card-logo.svg"
               alt="Card Logo"
             />
           </div>
@@ -45,7 +45,7 @@ const Illustration = ({ name, number, month, year, cvc }) => {
         <div className="back__image-wrapper">
           <img
             className="back__image"
-            src="/images/bg-card-back.png"
+            src="images/bg-card-back.png"
             alt="Card Background Back"
           />
         </div>
